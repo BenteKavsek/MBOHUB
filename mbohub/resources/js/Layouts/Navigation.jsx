@@ -1,9 +1,8 @@
-import Login from "@/Pages/Auth/Login";
 import { usePage } from "@inertiajs/react";
 
 function Navigation(){
 
-    const user = usePage().props.auth.user;
+    const user = usePage().props.auth.user; 
     return(
         <header className="header">
 
@@ -15,7 +14,7 @@ function Navigation(){
                 :
                 <div>
                     <p className="header_name">Guest</p>
-                    <a href={route('Login')} className="headerlink"></a> 
+                    <a href={route('login')} className="headerlink"></a> 
                 </div>
             }
         </header>
