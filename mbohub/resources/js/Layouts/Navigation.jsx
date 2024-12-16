@@ -1,23 +1,23 @@
-import Login from "@/Pages/Auth/Login";
 import { usePage } from "@inertiajs/react";
 
-function Navigation(){
+function Navigation() {
+    const { auth } = usePage().props;
 
-    const user = usePage().props.auth.user;
-    return(
+    return (
         <header className="header">
+            <a href={route('projects.projects')} className="headerlink">Projects</a>
+            <a href={route('about.about')} className="headerlink">About</a>
+            <a href={route('nieuws.nieuws')} className="headerlink">Nieuws</a>
+            <a href={route('contact.contact')} className="headerlink">Contact</a>
+            <a href={route('login')} className="headerlink">Login</a>
 
-        {/* <a href={route('about.about')} className="headerlink">about</a> */}
-
-            {
-                user ?
-                <p className="header_name">{user.name}</p>
-                :
+            {auth.user ? (
+                <p className="header_name">{auth.user.name}</p>
+            ) : (
                 <div>
                     <p className="header_name">Guest</p>
-                    <a href={route('Login')} className="headerlink"></a> 
                 </div>
-            }
+            )}
         </header>
     );
 }

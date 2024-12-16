@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\NieuwsController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProjectsController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -18,10 +22,18 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
+Route::middleware('auth')->group(function () { // Als je ingelogd bent kan je het zien ->
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+Route::get('/about', [AboutController::class, 'about'])->name('about.about');
+
+Route::get('/nieuws', [NieuwsController::class, 'nieuws'])->name('nieuws.nieuws');
+
+Route::get('/contact', [ContactController::class, 'contact'])->name('contact.contact');
+
+Route::get('/projects', [ProjectsController::class, 'projects'])->name('projects.projects');
+
+require __DIR__ . '/auth.php';
