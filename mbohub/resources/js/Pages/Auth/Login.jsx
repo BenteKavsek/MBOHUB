@@ -32,8 +32,8 @@ export default function Login({ status, canResetPassword }) {
             )}
 
             <form onSubmit={submit}>
-                <div>
-                    <InputLabel htmlFor="email" value="Email" />
+                <div className='container--email'>
+                    <InputLabel htmlFor="email" value="Email" className='title--email' />
 
                     <TextInput
                         id="email"
@@ -49,8 +49,8 @@ export default function Login({ status, canResetPassword }) {
                     <InputError message={errors.email} className="mt-2" />
                 </div>
 
-                <div className="mt-4">
-                    <InputLabel htmlFor="password" value="Password" />
+                <div className="container--password">
+                    <InputLabel htmlFor="password" value="Password" className='title--password' />
 
                     <TextInput
                         id="password"
@@ -65,7 +65,7 @@ export default function Login({ status, canResetPassword }) {
                     <InputError message={errors.password} className="mt-2" />
                 </div>
 
-                <div className="mt-4 block">
+                <div className="container--remember block">
                     <label className="flex items-center">
                         <Checkbox
                             name="remember"
@@ -74,17 +74,17 @@ export default function Login({ status, canResetPassword }) {
                                 setData('remember', e.target.checked)
                             }
                         />
-                        <span className="ms-2 text-sm text-gray-600 dark:text-gray-400">
+                        <span className="remember--text">
                             Remember me
                         </span>
                     </label>
                 </div>
 
-                <div className="mt-4 flex items-center justify-end">
+                <div className="container--forgot">
                     {canResetPassword && (
                         <Link
                             href={route('password.request')}
-                            className="rounded-md text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:text-gray-400 dark:hover:text-gray-100 dark:focus:ring-offset-gray-800"
+                            className="text--for"
                         >
                             Forgot your password?
                         </Link>
@@ -98,3 +98,4 @@ export default function Login({ status, canResetPassword }) {
         </GuestLayout>
     );
 }
+import './Login.css';
