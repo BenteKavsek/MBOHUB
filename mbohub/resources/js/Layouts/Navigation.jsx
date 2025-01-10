@@ -22,4 +22,5 @@ function Navigation() {
     );
 }
 
+import './Navigation.css';
 export default Navigation;
