@@ -110,7 +110,7 @@ button:disabled {
 label span {
     margin-left: 8px;
     color: #5E3289;
-    background: #EFBF0;
+    background: #EFB0;
     padding: 0.3rem 0.5rem;
     border-radius: 6px;
 }
@@ -124,7 +124,7 @@ a {
 
 a:hover {
     color: #E03344;
-    background: #EFBF0;
+    background: #EFB0;
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
 }

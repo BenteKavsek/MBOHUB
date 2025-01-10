@@ -1,0 +1,68 @@
+/* Define the color palette */
+:root {
+    --purple-jam: #6a0572;
+    --orangy-red: #ff4500;
+    --fountain-blue: #6dcff6;
+    --selective-yellow: #ffba08;
+}
+
+/* Reset margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.header {
+    background-color: var(--fountain-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Links inside the header */
+.headerlink {
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 1rem;
+    color: var(--purple-jam);
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.headerlink:hover {
+    color: var(--orangy-red);
+    transform: scale(1.1);
+}
+
+/* Authenticated user name styling */
+.header_name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--selective-yellow);
+    margin-left: auto;
+}
+
+/* Styling for the Guest name container */
+.header_name div {
+    color: var(--purple-jam);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headerlink {
+        margin: 0.5rem 0;
+    }
+
+    .header_name {
+        margin-top: 0.5rem;
+    }
+}
