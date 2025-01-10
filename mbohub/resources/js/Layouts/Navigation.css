@@ -4,65 +4,123 @@
     --orangy-red: #ff4500;
     --fountain-blue: #6dcff6;
     --selective-yellow: #ffba08;
+    --white: #ffffff;
+    --light-gray: #f7f7f7;
+    --dark-gray: #333333;
+    --light-purple: #9b4dca; /* Light purple for normal button state */
+    --dark-purple: #6a0572;  /* Dark purple for button hover state */
 }
 
 /* Reset margin and padding */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Header styling */
 .header {
-    background-color: var(--fountain-blue);
+    background-color: var(--purple-jam);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Links inside the header */
+/* Navigation links container */
+.header_links {
+    display: flex;
+}
+
+/* Links inside the header (Buttons) */
 .headerlink {
     text-decoration: none;
     font-size: 1rem;
-    margin: 0 1rem;
-    color: var(--purple-jam);
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: 500;
+    color: var(--white);
+    padding: 0.8rem 1.3rem;
+    background-color: var(--light-purple); /* Light purple for default */
+    border-radius: 30px; /* Rounded buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: capitalize;
+    margin-right: 0.25rem; /* Small gap between buttons */
 }
 
+/* Remove margin for the last button */
+.headerlink:last-child {
+    margin-right: 0;
+}
+
+/* Hover effect for buttons */
 .headerlink:hover {
-    color: var(--orangy-red);
-    transform: scale(1.1);
+    background-color: var(--dark-purple); /* Dark purple for hover */
+    color: var(--white);
+    transform: translateY(-2px); /* Slight lift on hover */
 }
 
 /* Authenticated user name styling */
 .header_name {
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--selective-yellow);
-    margin-left: auto;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--purple-jam);
+    border-radius: 20px;
+    border: 2px solid var(--selective-yellow);
+    transition: all 0.3s ease;
 }
 
-/* Styling for the Guest name container */
-.header_name div {
+.header_name:hover {
+    background-color: var(--selective-yellow);
     color: var(--purple-jam);
+    border-color: var(--selective-yellow);
+    transform: scale(1.05);
 }
 
-/* Media queries for responsiveness */
+/* Guest styling */
+.header_name div {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--purple-jam);
+    padding: 0.8rem 1.5rem;
+    background-color: var(--light-gray);
+    border-radius: 20px;
+    border: 2px dashed var(--orangy-red);
+    transition: all 0.3s ease;
+}
+
+.header_name div:hover {
+    background-color: var(--orangy-red);
+    color: var(--white);
+    border-color: var(--fountain-blue);
+    transform: translateY(-2px);
+}
+
+/* Footer bar for symmetry */
+.header:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: var(--fountain-blue);
+    margin-top: -3px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
         text-align: center;
+        padding: 1rem 1rem;
     }
 
-    .headerlink {
-        margin: 0.5rem 0;
+    .header_links {
+        flex-direction: column;
+        gap: 1.5rem; /* Adjusted for mobile */
     }
 
     .header_name {
-        margin-top: 0.5rem;
+        margin-top: 1rem;
     }
 }
