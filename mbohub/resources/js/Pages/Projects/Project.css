@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.project {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.project__admin {
+    display: flex;
+    gap: 2rem;
+}
+
+.project__admin a,
+.project__admin form input {
+    font-size: 2rem;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.project__view {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__name {
+    font-size: 3rem;
+}
+
+.project__info {
+    font-size: 1.8rem;
+    color: blue;
+}
+
+
+.project__image {
+    height: 40rem;
+}

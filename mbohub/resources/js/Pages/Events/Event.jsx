@@ -16,6 +16,7 @@ function Event() {
                     <input type="submit" value="delete" />
                 </form>
                 {event.name}
+                <img src={event.image} alt="" className="project__image" />
             </section>
         </AuthenticatedLayout>
     );
