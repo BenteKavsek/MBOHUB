@@ -35,6 +35,7 @@ function Edit() {
                     <input type="text" name="kermerk1" value={form.kermerk1} onChange={editInputs} />
                     <input type="text" name="kenmerk2" value={form.kenmerk2} onChange={editInputs} />
                     <input type="text" name="kenmerk3" value={form.kenmerk3} onChange={editInputs} />
+                    <input type="text" name="datum" value={form.datum} onChange={editInputs} />
                     <input type="text" name="locatie" value={form.locatie} onChange={editInputs} />
                     <input type="text" name="info" value={form.info} onChange={editInputs} />
                     <input type="submit" />
