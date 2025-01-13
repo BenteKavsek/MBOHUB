@@ -35,13 +35,12 @@ body {
 
 /* Form container styling */
 form {
+    display: flex;
+    gap: 10px;
     background: #fff;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding: 2rem;
-    max-width: 400px;
-    width: 90%;
-    display: flex;
+    width: 100%;
     flex-direction: column;
     gap: var(--spacing);
     transition: box-shadow var(--transition-speed);
@@ -59,6 +58,16 @@ form:hover {
     font-weight: bold;
     color: var(--color-text);
     text-align: center;
+}
+
+.container--email{
+    width: 80%;
+    padding: 10px;
+}
+
+.container--password{
+    width: 80%;
+    padding: 10px;
 }
 
 /* Input container */
@@ -106,7 +115,6 @@ button {
     cursor: pointer;
     transition: background var(--transition-speed), transform var(--transition-speed);
     width: 100%;
-    max-width: 100%;
 }
 
 button:hover {
@@ -216,4 +224,5 @@ a:hover {
     .container--forgot {
         font-size: var(--font-size-small);
     }
+
 }
