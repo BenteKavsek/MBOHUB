@@ -1,103 +1,116 @@
-/* Body: Centered layout with a vibrant background */
+/* Root variables for colors and spacing */
+:root {
+    --font-primary: 'Arial', sans-serif;
+    --color-text: #5E3289;
+    --color-bg: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+    --color-accent: #43B3C4;
+    --color-accent-hover: #E03344;
+    --color-button: #E03344;
+    --color-button-hover: #5E3289;
+    --color-input-bg: #fff9e6;
+    --color-input-focus: #fff4cc;
+    --color-input-border: #EFBF00;
+    --color-link-highlight: rgba(67, 179, 196, 0.2);
+    --box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    --transition-speed: 0.3s;
+    --border-radius: 12px;
+    --spacing: 1rem;
+    --font-size-small: 0.875rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.25rem;
+}
+
+/* General body styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-primary);
     min-height: 100vh;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #5E3289; /* Default text color */
+    background: var(--color-bg);
+    color: var(--color-text);
+    transition: background var(--transition-speed);
 }
 
-/* Form container: Styled form with yellow background and shadow */
+/* Form container styling */
 form {
-    background: '#EFBF0';
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-    padding: 2.5rem 2rem;
-    max-width: 420px;
-    width: 100%;
-}
-
-.container--password{
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    max-width: 400px;
+    width: 90%;
+    display: flex;
     flex-direction: column;
+    gap: var(--spacing);
+    transition: box-shadow var(--transition-speed);
 }
 
-.title--password{
-    font-size: 20px;
-    padding: 10px;
+form:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-
-.title--email{
-    font-size: 20px;
+/* Section titles */
+.title--password,
+.title--email {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing);
+    font-weight: bold;
+    color: var(--color-text);
+    text-align: center;
 }
 
-.container--remember{
-    font-size: 15px;
-}
-
-
-.container--forgot{
-    font-size: 15px;
-    padding: 10px;
-}
-
-.text--for{
-    text-decoration: none !important;
-}
-/* Input container: Ensures labels and inputs are aligned */
+/* Input container */
 .input-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.5rem;
-    gap: 0.5rem; /* Adds space between label and input */
+    gap: 0.5rem;
 }
 
 .input-container label {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #5E3289;
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    color: var(--color-text);
 }
 
-/* Input fields: Uniform styling for email and password */
 input[type="email"],
 input[type="password"] {
-    width: 100%; /* Full width */
-    border: 2px solid '#EFBF0'; /* Yellow border */
-    border-radius: 8px;
+    width: 100%;
+    border: 2px solid var(--color-input-border);
+    border-radius: var(--border-radius);
     padding: 0.8rem;
-    font-size: 1rem;
-    background: #fff9e6; /* Light yellow background */
-    color: #5E3289; /* Purple text color */
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    font-size: var(--font-size-medium);
+    background: var(--color-input-bg);
+    color: var(--color-text);
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed), background var(--transition-speed);
 }
 
-/* Focus styles: Blue border and glow */
+/* Input focus styles */
 input[type="email"]:focus,
 input[type="password"]:focus {
     outline: none;
-    border-color: #43B3C4; /* Blue focus border */
-    box-shadow: 0 0 8px rgba(67, 179, 196, 0.5); /* Soft blue glow */
-    background: #fff4cc; /* Slightly darker yellow on focus */
+    border-color: var(--color-accent);
+    box-shadow: 0 0 8px rgba(67, 179, 196, 0.5);
+    background: var(--color-input-focus);
 }
 
-/* Buttons: Vibrant red with hover effect */
+/* Buttons */
 button {
-    background: #E03344;
+    background: var(--color-button);
     color: #fff;
     font-weight: bold;
-    padding: 0.6rem 1.5rem;
-    border-radius: 10px;
+    padding: 0.8rem;
+    border-radius: var(--border-radius);
     border: none;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    display: block;
-    margin: 1rem auto 0;
+    transition: background var(--transition-speed), transform var(--transition-speed);
+    width: 100%;
+    max-width: 100%;
 }
 
 button:hover {
-    background: #5E3289;
+    background: var(--color-button-hover);
     transform: translateY(-2px);
 }
 
@@ -106,25 +119,101 @@ button:disabled {
     cursor: not-allowed;
 }
 
-/* Checkbox label: Styled with yellow highlight */
+/* Checkbox label */
 label span {
     margin-left: 8px;
-    color: #5E3289;
-    background: #EFB0;
+    color: var(--color-text);
+    background: var(--color-input-bg);
     padding: 0.3rem 0.5rem;
-    border-radius: 6px;
+    border-radius: var(--border-radius);
 }
 
-/* Links: Add yellow hover effects */
+/* Links */
 a {
-    color: #43B3C4;
+    color: var(--color-accent);
     text-decoration: underline;
-    transition: color 0.3s ease, background 0.3s;
+    transition: color var(--transition-speed), background var(--transition-speed), box-shadow var(--transition-speed);
+    position: relative;
 }
 
 a:hover {
-    color: #E03344;
-    background: #EFB0;
+    color: var(--color-accent-hover);
+    background: var(--color-link-highlight);
     padding: 0.2rem 0.4rem;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(67, 179, 196, 0.4);
+}
+
+/* Enhanced "Forgot Password" section */
+.container--forgot {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: var(--font-size-small);
+    color: var(--color-text);
+    margin-bottom: var(--spacing);
+    align-items: flex-start;
+}
+
+.container--forgot a {
+    font-size: var(--font-size-small);
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.container--forgot a:hover {
+    color: var(--color-accent-hover);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        padding: 1.5rem;
+        gap: 0.75rem;
+    }
+
+    .title--password,
+    .title--email {
+        font-size: var(--font-size-medium);
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: var(--font-size-small);
+        padding: 0.6rem;
+    }
+
+    button {
+        padding: 0.6rem;
+    }
+
+    .container--forgot {
+        font-size: var(--font-size-small);
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .title--password,
+    .title--email {
+        font-size: var(--font-size-small);
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: var(--font-size-small);
+        padding: 0.5rem;
+    }
+
+    button {
+        padding: 0.5rem;
+    }
+
+    .container--forgot {
+        font-size: var(--font-size-small);
+    }
 }
