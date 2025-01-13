@@ -3,11 +3,9 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\EventAdminController;
 use App\Http\Controllers\NieuwsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectsController;
-use App\Http\Controllers\EventController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -31,8 +29,7 @@ Route::middleware('auth')->group(function () { // Als je ingelogd bent kan je he
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::resources([
-        'projects' => AdminController::class,
-        'events' => EventAdminController::class,
+        'projects' => AdminController::class
     ]);
 });
 
@@ -45,7 +42,5 @@ Route::get('/contact', [ContactController::class, 'contact'])->name('contact.con
 Route::get('/project', [ProjectsController::class, 'projects'])->name('projects.projects');
 Route::get('/project/{project}', [ProjectsController::class, 'project'])->name('projects.project');
 
-Route::get('/event', [EventController::class, 'events'])->name('events.events');
-Route::get('/event/{event}', [EventController::class, 'event'])->name('events.event');
 
 require __DIR__ . '/auth.php';
