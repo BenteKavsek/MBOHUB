@@ -8,7 +8,8 @@
 }
 
 .project {
-    padding: 5rem;
+    z-index: 10;
+    padding: 20rem;
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -23,8 +24,9 @@
 .project__admin form input {
     font-size: 2rem;
     border: none;
-    text-decoration: none;
+    text-decoration: underline;
     background-color: transparent;
+    color: darkred;
 }
 
 .project__view {
@@ -32,16 +34,40 @@
     justify-content: space-between;
 }
 
+.project__left {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
 .project__name {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 400;
 }
 
 .project__info {
     font-size: 1.8rem;
-    color: blue;
+    line-height: 2rem;
 }
 
+.kenmerken {
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
+    font-weight: 200;
+}
 
 .project__image {
-    height: 40rem;
+    height: 50rem;
+    transition: 0.1s ease-in;
+}
+
+.project__image:hover {
+    transform: scale(1.1);
+}
+
+.project__date {
+    display: flex;
+    gap: 4rem;
+    font-size: 2.4rem;
 }
