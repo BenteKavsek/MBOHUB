@@ -126,9 +126,6 @@ body {
     transform: scale(1.05);
 }
 
-.guest-name {
-}
-
 .header:after {
     content: "";
     display: block;
@@ -154,6 +151,7 @@ body {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -161,13 +159,12 @@ body {
 
 /* Events Section */
 .events {
-    background: linear-gradient(
-        135deg,
-        var(--dark-purple),
-        var(--light-purple)
-    );
+    background: linear-gradient(135deg,
+            var(--dark-purple),
+            var(--light-purple));
     color: var(--white);
-    position: relative; /* Ensure the pseudo-element is positioned relative to the container */
+    position: relative;
+    /* Ensure the pseudo-element is positioned relative to the container */
     padding: 2rem;
     text-align: center;
 }
@@ -176,21 +173,29 @@ body {
 .events::before {
     content: "";
     position: absolute;
-    top: 50%; /* Place the line in the middle */
-    left: 0; /* Start from the left */
-    width: 0%; /* Initially no width */
-    height: 2px; /* Line height */
-    background-color: var(--white); /* White line color */
+    top: 50%;
+    /* Place the line in the middle */
+    left: 0;
+    /* Start from the left */
+    width: 0%;
+    /* Initially no width */
+    height: 2px;
+    /* Line height */
+    background-color: var(--white);
+    /* White line color */
     animation: timelineAnimation 3s ease-in-out forwards;
 }
 
 /* Timeline Animation */
 @keyframes timelineAnimation {
     0% {
-        width: 0%; /* Line starts at 0% width */
+        width: 0%;
+        /* Line starts at 0% width */
     }
+
     100% {
-        width: 100%; /* Line reaches 100% width (full container width) */
+        width: 100%;
+        /* Line reaches 100% width (full container width) */
     }
 }
 
@@ -207,11 +212,9 @@ body {
 }
 
 .projects {
-    background: linear-gradient(
-        135deg,
-        var(--light-purple),
-        var(--dark-purple)
-    );
+    background: linear-gradient(135deg,
+            var(--light-purple),
+            var(--dark-purple));
     color: var(--white);
 }
 

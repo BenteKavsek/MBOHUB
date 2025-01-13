@@ -14,7 +14,7 @@ function Project() {
                     <form action={route('projects.destroy', [project.id])} className="project__delete" method="post">
                         <input type="hidden" name="_method" value="delete" />
                         <input type="hidden" name="_token" value={csrf} />
-                        <input type="submit" value="delete" />
+                        <input type="submit" value="Delete" />
                     </form>
                 </section>
 
@@ -23,18 +23,21 @@ function Project() {
                     <section className="project__left">
                         <h2 className="project__name">{project.naam}</h2>
                         <p className="project__info">{project.info}</p>
-                        <h5>{project.kermerk1}</h5>
-                        <h5>{project.kenmerk2}</h5>
-                        <h5>{project.kenmerk3}</h5>
+                        <section className="kenmerken">
+                            <h5 className="kenmerk">{project.kermerk1}</h5>
+                            <h5 className="kenmerk">{project.kenmerk2}</h5>
+                            <h5 className="kenmerk">{project.kenmerk3}</h5>
+                        </section>
                     </section>
 
                     <section className="project__right">
 
-                        <img src={project.image} alt="" className="project__image" />
+                        <img src="/img/750dinner.jpg" alt="" className="project__image" />
 
-
-                        <p>{project.datum}</p>
-                        <p>{project.locatie}</p>
+                        <section className="project__date">
+                            <p>{project.datum}</p>
+                            <p>{project.locatie}</p>
+                        </section>
                     </section>
 
 
