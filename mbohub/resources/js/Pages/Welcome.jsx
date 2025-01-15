@@ -1,5 +1,5 @@
 import GuestLayout from "@/Layouts/GuestLayout";
-import "./project.css";
+import "./projectswelkom.css";
 
 function Welcome() {
     return (
