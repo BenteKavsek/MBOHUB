@@ -1,8 +1,32 @@
-/* Body: Centered layout with a vibrant background */
+/* Header styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #5E3289; /* Purple background */
+    color: white; /* White text color */
+    padding: 1rem; /* Adjust padding as needed */
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.header-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 1000%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
+/* Adjust body layout to account for fixed header */
 body {
     font-family: 'Arial', sans-serif;
     min-height: 100vh;
     margin: 0;
+    padding-top: 60px; /* Space for the header height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,65 +35,18 @@ body {
 
 /* Form container: Styled form with yellow background and shadow */
 form {
-<<<<<<< HEAD
-    display: flex;
-    gap: 10px;
-    background: #fff;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    width: 100%;
-=======
-    background: '#EFBF0';
+    background: #fff; /* Corrected yellow background */
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
     padding: 2.5rem 2rem;
     max-width: 420px;
     width: 100%;
-}
-
-.container--password{
->>>>>>> f4fa1617deec87c16d5a999c80225a35507d6d3f
+    display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.title--password{
-    font-size: 20px;
-    padding: 10px;
-}
-
-
-.title--email{
-    font-size: 20px;
-}
-
-<<<<<<< HEAD
-.container--email{
-    width: 80%;
-    padding: 10px;
-}
-
-.container--password{
-    width: 80%;
-    padding: 10px;
-}
-
-/* Input container */
-=======
-.container--remember{
-    font-size: 15px;
-}
-
-
-.container--forgot{
-    font-size: 15px;
-    padding: 10px;
-}
-
-.text--for{
-    text-decoration: none !important;
-}
 /* Input container: Ensures labels and inputs are aligned */
->>>>>>> f4fa1617deec87c16d5a999c80225a35507d6d3f
 .input-container {
     display: flex;
     flex-direction: column;
@@ -87,7 +64,7 @@ form {
 input[type="email"],
 input[type="password"] {
     width: 100%; /* Full width */
-    border: 2px solid '#EFBF0'; /* Yellow border */
+    border: 2px solid #aaa; /* Yellow border */
     border-radius: 8px;
     padding: 0.8rem;
     font-size: 1rem;
@@ -114,14 +91,8 @@ button {
     border-radius: 10px;
     border: none;
     cursor: pointer;
-<<<<<<< HEAD
-    transition: background var(--transition-speed), transform var(--transition-speed);
-    width: 100%;
-=======
     transition: background 0.3s, transform 0.2s;
-    display: block;
-    margin: 1rem auto 0;
->>>>>>> f4fa1617deec87c16d5a999c80225a35507d6d3f
+    width: 100%;
 }
 
 button:hover {
@@ -138,7 +109,7 @@ button:disabled {
 label span {
     margin-left: 8px;
     color: #5E3289;
-    background: #EFB0;
+    background: #cf56e7;
     padding: 0.3rem 0.5rem;
     border-radius: 6px;
 }
@@ -148,36 +119,16 @@ a {
     color: #43B3C4;
     text-decoration: underline;
     transition: color 0.3s ease, background 0.3s;
+    padding: 1%;
+
 }
 
 a:hover {
     color: #E03344;
-    background: #EFB0;
+    background: #aaa;
     padding: 0.2rem 0.4rem;
-<<<<<<< HEAD
-    border-radius: var(--border-radius);
+    border-radius: 4px;
     box-shadow: 0 4px 10px rgba(67, 179, 196, 0.4);
-}
-
-/* Enhanced "Forgot Password" section */
-.container--forgot {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: var(--font-size-small);
-    color: var(--color-text);
-    margin-bottom: var(--spacing);
-    align-items: flex-start;
-}
-
-.container--forgot a {
-    font-size: var(--font-size-small);
-    text-decoration: none;
-    color: var(--color-text);
-}
-
-.container--forgot a:hover {
-    color: var(--color-accent-hover);
 }
 
 /* Responsive Design */
@@ -187,23 +138,14 @@ a:hover {
         gap: 0.75rem;
     }
 
-    .title--password,
-    .title--email {
-        font-size: var(--font-size-medium);
-    }
-
     input[type="email"],
     input[type="password"] {
-        font-size: var(--font-size-small);
+        font-size: 0.875rem;
         padding: 0.6rem;
     }
 
     button {
         padding: 0.6rem;
-    }
-
-    .container--forgot {
-        font-size: var(--font-size-small);
     }
 }
 
@@ -213,26 +155,13 @@ a:hover {
         gap: 0.5rem;
     }
 
-    .title--password,
-    .title--email {
-        font-size: var(--font-size-small);
-    }
-
     input[type="email"],
     input[type="password"] {
-        font-size: var(--font-size-small);
+        font-size: 0.75rem;
         padding: 0.5rem;
     }
 
     button {
         padding: 0.5rem;
     }
-
-    .container--forgot {
-        font-size: var(--font-size-small);
-    }
-
-=======
-    border-radius: 4px;
->>>>>>> f4fa1617deec87c16d5a999c80225a35507d6d3f
 }

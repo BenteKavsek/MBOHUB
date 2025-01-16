@@ -33,6 +33,24 @@
     text-align: left; /* Align text to the left */
 }
 
+/* Individual Project Cards with Alternating Colors */
+.project-card:nth-child(1) {
+    background: #6a0572; /* Light red background */
+}
+
+.project-card:nth-child(2) {
+    background: #ff4500; /* Light green background */
+}
+
+.project-card:nth-child(3) {
+    background: #6dcff6;; /* Light blue background */
+}
+
+.project-card:nth-child(4) {
+    background: #ffba08; /* Light yellow background */
+}
+
+
 /* Video Container */
 .video-container {
     position: relative;
@@ -52,9 +70,32 @@
 .project-description {
     padding: 15px;
     font-size: 1rem;
-    color: #555; /* Slightly muted text color */
+    color: #ffffff; /* Slightly muted text color */
     line-height: 1.5;
 }
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 
 /* Responsive Layout for Small Screens */
 @media (max-width: 768px) {

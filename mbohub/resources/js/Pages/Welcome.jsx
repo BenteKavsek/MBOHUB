@@ -78,6 +78,18 @@ function Welcome() {
                     </div>
                 </div>
             </section>
+
+            {/* Footer Section */}
+            <footer className="footer">
+                <div className="footer-content">
+                    <p>&copy; 2025 MBO Hub. All rights reserved.</p>
+                    <div className="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </footer>
         </GuestLayout>
     );
 }
