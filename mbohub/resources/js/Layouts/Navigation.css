@@ -146,16 +146,6 @@ body {
     color: var(--white);
 }
 
-/* Define the fade-in animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 /* Events Section */
 .events {
     background: linear-gradient(
@@ -169,33 +159,18 @@ body {
     text-align: center;
 }
 
-/* Timeline Line Animation */
-.events::before {
-    content: "";
-    position: absolute;
-    top: 50%; /* Place the line in the middle */
-    left: 0; /* Start from the left */
-    width: 0%; /* Initially no width */
-    height: 2px; /* Line height */
-    background-color: var(--white); /* White line color */
-    animation: timelineAnimation 3s ease-in-out forwards;
+/* Events Section */
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    gap: 1rem;
 }
 
-/* Timeline Animation */
-@keyframes timelineAnimation {
-    0% {
-        width: 0%; /* Line starts at 0% width */
-    }
-    100% {
-        width: 100%; /* Line reaches 100% width (full container width) */
-    }
-}
-
-/* Responsive behavior */
-@media (max-width: 768px) {
-    .events {
-        padding: 1rem;
-    }
+.events h2,
+.events p {
+    margin: 0;
 }
 
 .nieuws {
@@ -208,7 +183,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 3rem; /* Space between blocks */
+    gap: 3rem;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
@@ -313,5 +288,20 @@ body {
 
     .user-name {
         margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .events {
+        padding: 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

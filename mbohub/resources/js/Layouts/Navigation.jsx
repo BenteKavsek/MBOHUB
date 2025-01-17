@@ -8,7 +8,7 @@ function Navigation() {
         <header className="header">
             <div className="logo-container">
                 <img 
-                    src="https://cdn.discordapp.com/attachments/1307992635306278942/1327285532916715600/750_Amsterdam_Slinger_Compositie_1-1_Boven_L.png?ex=6785257a&is=6783d3fa&hm=f40455d0f3161cefac8e13bfb17f5c563b12925ea63dda2d11c5d1fa4f40ff7a&" 
+                    src="https://cdn.discordapp.com/attachments/1307992635306278942/1327285532916715600/750_Amsterdam_Slinger_Compositie_1-1_Boven_L.png?ex=678b143a&is=6789c2ba&hm=9f3714c53e5f25e9f5e55d7028ad50cd0b22ebb55014e892e4e32c40c0095247&" 
                     alt="Logo"
                     className="header-logo"
                 />

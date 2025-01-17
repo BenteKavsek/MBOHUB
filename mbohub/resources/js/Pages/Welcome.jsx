@@ -15,8 +15,8 @@ function Welcome() {
 
             {/* Events Section */}
             <section className="section events">
-                <h2>Events</h2>
-                <p>Balls</p>
+                <h2>TEKST</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tenetur quos nulla est veritatis odit repudiandae nobis sunt velit possimus quis temporibus eum libero consectetur repellendus, amet illum reprehenderit laudantium?</p>
             </section>
 
            {/* Nieuws Section */}
