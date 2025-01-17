@@ -137,24 +137,13 @@ body {
 }
 
 .section {
-    height: 50rem;
+    height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 1rem;
     color: var(--white);
-}
-
-/* Define the fade-in animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 /* Events Section */
@@ -164,51 +153,99 @@ body {
             var(--light-purple));
     color: var(--white);
     position: relative;
-    /* Ensure the pseudo-element is positioned relative to the container */
     padding: 2rem;
     text-align: center;
 }
 
-/* Timeline Line Animation */
-.events::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    /* Place the line in the middle */
-    left: 0;
-    /* Start from the left */
-    width: 0%;
-    /* Initially no width */
-    height: 2px;
-    /* Line height */
-    background-color: var(--white);
-    /* White line color */
-    animation: timelineAnimation 3s ease-in-out forwards;
+/* Events Section */
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    gap: 1rem;
 }
 
-/* Timeline Animation */
-@keyframes timelineAnimation {
-    0% {
-        width: 0%;
-        /* Line starts at 0% width */
-    }
-
-    100% {
-        width: 100%;
-        /* Line reaches 100% width (full container width) */
-    }
-}
-
-/* Responsive behavior */
-@media (max-width: 768px) {
-    .events {
-        padding: 1rem;
-    }
+.events h2,
+.events p {
+    margin: 0;
 }
 
 .nieuws {
     background: var(--white);
     color: var(--dark-purple);
+    padding: 3rem 1rem;
+}
+
+.nieuws-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nieuws-block {
+    flex: 1;
+    width: 350px;
+    /* Fixed width */
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    padding: 1.5rem;
+    /* Padding around the content */
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nieuws-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    background-color: var(--light-purple);
+    color: var(--white);
+}
+
+.nieuws-image {
+    width: 100%;
+    height: 150px;
+    /* Image height */
+    margin-bottom: 1rem;
+    overflow: hidden;
+    /* Ensures the image doesn't overflow */
+    border-radius: 8px;
+    /* Rounded corners for the image */
+}
+
+.nieuws-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nieuws-content h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: inherit;
+}
+
+.nieuws-content p {
+    font-size: 1rem;
+    color: inherit;
+}
+
+.projects {
+    background: linear-gradient(135deg,
+            var(--light-purple),
+            var(--dark-purple));
+    color: var(--white);
 }
 
 .section h2 {
@@ -253,5 +290,21 @@ body {
 
     .user-name {
         margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .events {
+        padding: 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

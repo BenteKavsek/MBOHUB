@@ -15,15 +15,46 @@ function Welcome() {
 
             {/* Events Section */}
             <section className="section events">
-                <h2>Events</h2>
-                <p>test</p>
+                <h2>TEKST</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tenetur quos nulla est veritatis odit repudiandae nobis sunt velit possimus quis temporibus eum libero consectetur repellendus, amet illum reprehenderit laudantium?</p>
             </section>
 
-            {/* Nieuws Section */}
-            <section className="section nieuws">
-                <h2>Nieuws</h2>
-                <p>test</p>
-            </section>
+           {/* Nieuws Section */}
+         <section className="section nieuws">
+    <div className="nieuws-container">
+        <a href="/nieuws1" className="nieuws-block">
+            <div className="nieuws-image">
+                <img src="/img/750dinner.jpg" alt="Nieuws 1" />
+            </div>
+            <div className="nieuws-content">
+                <h3>Nieuws</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quam, adipisci nobis quisquam nemo, praesentium quo harum omnis illum ratione sapiente nihil? Perspiciatis enim ratione magni quasi harum autem non.</p>
+            </div>
+        </a>
+        <a href="/nieuws2" className="nieuws-block">
+            <div className="nieuws-image">
+                <img src="/img/750dinner.jpg" alt="Project" />
+            </div>
+            <div className="nieuws-content">
+                <h3>Project</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo nulla exercitationem animi quod praesentium incidunt fugit aspernatur temporibus, ea iusto ratione impedit molestias neque adipisci facilis perferendis delectus reiciendis ducimus.</p>
+            </div>
+        </a>
+        <a href="/nieuws3" className="nieuws-block">
+            <div className="nieuws-image">
+            <img src="/img/750dinner.jpg" alt="Event" />
+
+            </div>
+            <div className="nieuws-content">
+                <h3>Event</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, sint veniam! Sint voluptatum quae corporis aliquam labore, dolorum eius sunt, delectus culpa, iste unde asperiores ratione. Numquam itaque pariatur quibusdam!</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+
+
 
             {/* Projects Section */}
             <section className="section projects">
@@ -80,13 +111,45 @@ function Welcome() {
             </section>
 
             {/* Footer Section */}
-            <footer className="footer">
-                <div className="footer-content">
-                    <p>&copy; 2025 MBO Hub. All rights reserved.</p>
-                    <div className="footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Contact</a>
+            <footer className="site-footer">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <h6>About Us</h6>
+                            <p>
+                                The MBO Hub is a platform that connects education, businesses, and the community.
+                                We aim to empower students and professionals through events, projects, and news updates.
+                            </p>
+                        </div>
+                        <div className="col-md-4">
+                            <h6>Quick Links</h6>
+                            <ul className="footer-links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div className="col-md-4">
+                            <h6>Contact Us</h6>
+                            <p>Email: info@mbo-hub.amsterdam</p>
+                            <p>Phone: +31 20 123 4567</p>
+                            <p>Address: Amsterdam, Netherlands</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                        <div className="col-md-6">
+                            <p>&copy; 2025 MBO Hub. All rights reserved.</p>
+                        </div>
+                        <div className="col-md-6 text-right">
+                            <ul className="social-icons">
+                                <li><a className="facebook" href="#"><i className="fa fa-facebook"></i></a></li>
+                                <li><a className="twitter" href="#"><i className="fa fa-twitter"></i></a></li>
+                                <li><a className="linkedin" href="#"><i className="fa fa-linkedin"></i></a></li>
+                                <li><a className="instagram" href="#"><i className="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </footer>
