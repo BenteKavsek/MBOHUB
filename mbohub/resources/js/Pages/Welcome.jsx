@@ -16,13 +16,13 @@ function Welcome() {
             {/* Events Section */}
             <section className="section events">
                 <h2>Events</h2>
-                <p>test</p>
+                <p>Discover upcoming events and activities that bring our community together.</p>
             </section>
 
             {/* Nieuws Section */}
             <section className="section nieuws">
                 <h2>Nieuws</h2>
-                <p>test</p>
+                <p>Stay informed with the latest news and updates from our network.</p>
             </section>
 
             {/* Projects Section */}
@@ -80,13 +80,45 @@ function Welcome() {
             </section>
 
             {/* Footer Section */}
-            <footer className="footer">
-                <div className="footer-content">
-                    <p>&copy; 2025 MBO Hub. All rights reserved.</p>
-                    <div className="footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Contact</a>
+            <footer className="site-footer">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <h6>About Us</h6>
+                            <p>
+                                The MBO Hub is a platform that connects education, businesses, and the community.
+                                We aim to empower students and professionals through events, projects, and news updates.
+                            </p>
+                        </div>
+                        <div className="col-md-4">
+                            <h6>Quick Links</h6>
+                            <ul className="footer-links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div className="col-md-4">
+                            <h6>Contact Us</h6>
+                            <p>Email: info@mbo-hub.amsterdam</p>
+                            <p>Phone: +31 20 123 4567</p>
+                            <p>Address: Amsterdam, Netherlands</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                        <div className="col-md-6">
+                            <p>&copy; 2025 MBO Hub. All rights reserved.</p>
+                        </div>
+                        <div className="col-md-6 text-right">
+                            <ul className="social-icons">
+                                <li><a className="facebook" href="#"><i className="fa fa-facebook"></i></a></li>
+                                <li><a className="twitter" href="#"><i className="fa fa-twitter"></i></a></li>
+                                <li><a className="linkedin" href="#"><i className="fa fa-linkedin"></i></a></li>
+                                <li><a className="instagram" href="#"><i className="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </footer>

@@ -74,28 +74,101 @@
     line-height: 1.5;
 }
 
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-links a {
-    color: white;
-    margin: 0 15px;
+.site-footer {
+    background-color: #26272b;
+    padding: 10px 15px; /* Reduced padding for a compact look */
+    font-size: 12px; /* Smaller font size */
+    color: #737373;
+  }
+  
+  .site-footer h6 {
+    color: #fff;
+    font-size: 14px; /* Reduced heading size */
+    text-transform: uppercase;
+    margin-bottom: 5px; /* Reduced spacing */
+  }
+  
+  .site-footer p {
+    margin: 0 0 5px; /* Tighter spacing */
+    line-height: 1.4; /* Compact line spacing */
+  }
+  
+  .site-footer a {
+    color: #737373;
     text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
+    transition: color 0.3s ease;
+  }
+  
+  .site-footer a:hover {
+    color: #3366cc;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 3px; /* Reduced spacing between list items */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust spacing between columns */
+  }
+  
+  .col-md-6,
+  .col-md-3,
+  .col-md-8,
+  .col-md-4 {
+    flex: 0 0 calc(33.33% - 10px); /* Adjusted column width */
+  }
+  
+  .col-md-8 {
+    flex: 0 0 calc(66.66% - 10px);
+  }
+  
+  .col-md-4 {
+    flex: 0 0 calc(33.33% - 10px);
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-icons li {
+    margin-left: 5px; /* Reduced spacing between icons */
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 25px; /* Smaller icons */
+    height: 25px;
+    line-height: 25px;
+    background: #33353d;
+    color: #737373;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px; /* Smaller font size for icons */
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background: #3366cc;
+    color: #fff;
+  }
+  
 
 /* Responsive Layout for Small Screens */
 @media (max-width: 768px) {
