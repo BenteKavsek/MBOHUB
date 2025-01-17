@@ -211,13 +211,6 @@ body {
     color: var(--dark-purple);
 }
 
-.projects {
-    background: linear-gradient(135deg,
-            var(--light-purple),
-            var(--dark-purple));
-    color: var(--white);
-}
-
 .section h2 {
     font-size: 2rem;
     margin-bottom: 0.5rem;

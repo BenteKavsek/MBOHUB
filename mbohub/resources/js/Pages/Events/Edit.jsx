@@ -40,5 +40,4 @@ function Edit() {
     );
 }
 
-import './Edit.css';
 export default Edit;
