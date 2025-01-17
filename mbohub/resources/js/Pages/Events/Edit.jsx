@@ -1,6 +1,7 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { usePage } from "@inertiajs/react";
 import { useState } from "react";
+import Events from "./Events";
 
 function Edit() {
     const project = usePage().props.project;
@@ -24,7 +25,7 @@ function Edit() {
     return (
         <AuthenticatedLayout>
             <section className="edit">
-                <form action={route('projects.update', [project.id])} className="edit__form" method="post">
+                <form action={route('events.update', [event.id])} className="edit__form" method="post">
                     <input type="hidden" name="_method" value="PUT" />
                     <input type="hidden" name="_token" value={csrf} />
                     <input type="hidden" name="naam" value={user} />
@@ -39,4 +40,5 @@ function Edit() {
     );
 }
 
+import './Edit.css';
 export default Edit;
