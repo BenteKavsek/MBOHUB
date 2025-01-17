@@ -12,6 +12,10 @@
     padding: 10rem;
 }
 
+.projects-coll {
+    background-color: white;
+}
+
 .projects__list {
     display: flex;
     gap: 5rem;

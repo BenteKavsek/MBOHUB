@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\NieuwsController;
+use App\Http\Controllers\PartnersController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectsController;
 use Illuminate\Foundation\Application;
@@ -35,7 +36,7 @@ Route::middleware('auth')->group(function () { // Als je ingelogd bent kan je he
 
 Route::get('/about', [AboutController::class, 'about'])->name('about.about');
 
-Route::get('/nieuws', [NieuwsController::class, 'nieuws'])->name('nieuws.nieuws');
+Route::get('/partner', [PartnersController::class, 'partner'])->name('partners.partners');
 
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact.contact');
 

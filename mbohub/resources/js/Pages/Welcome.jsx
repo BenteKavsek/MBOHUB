@@ -19,39 +19,39 @@ function Welcome() {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tenetur quos nulla est veritatis odit repudiandae nobis sunt velit possimus quis temporibus eum libero consectetur repellendus, amet illum reprehenderit laudantium?</p>
             </section>
 
-           {/* Nieuws Section */}
-         <section className="section nieuws">
-    <div className="nieuws-container">
-        <a href="/nieuws1" className="nieuws-block">
-            <div className="nieuws-image">
-                <img src="/img/750dinner.jpg" alt="Nieuws 1" />
-            </div>
-            <div className="nieuws-content">
-                <h3>Nieuws</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quam, adipisci nobis quisquam nemo, praesentium quo harum omnis illum ratione sapiente nihil? Perspiciatis enim ratione magni quasi harum autem non.</p>
-            </div>
-        </a>
-        <a href="/nieuws2" className="nieuws-block">
-            <div className="nieuws-image">
-                <img src="/img/750dinner.jpg" alt="Project" />
-            </div>
-            <div className="nieuws-content">
-                <h3>Project</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo nulla exercitationem animi quod praesentium incidunt fugit aspernatur temporibus, ea iusto ratione impedit molestias neque adipisci facilis perferendis delectus reiciendis ducimus.</p>
-            </div>
-        </a>
-        <a href="/nieuws3" className="nieuws-block">
-            <div className="nieuws-image">
-            <img src="/img/750dinner.jpg" alt="Event" />
+            {/* Nieuws Section */}
+            <section className="section nieuws">
+                <div className="nieuws-container">
+                    <a href="/nieuws1" className="nieuws-block">
+                        <div className="nieuws-image">
+                            <img src="/img/750dinner.jpg" alt="Nieuws 1" />
+                        </div>
+                        <div className="nieuws-content">
+                            <h3>Nieuws</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quam, adipisci nobis quisquam nemo, praesentium quo harum omnis illum ratione sapiente nihil? Perspiciatis enim ratione magni quasi harum autem non.</p>
+                        </div>
+                    </a>
+                    <a href="/nieuws2" className="nieuws-block">
+                        <div className="nieuws-image">
+                            <img src="/img/750dinner.jpg" alt="Project" />
+                        </div>
+                        <div className="nieuws-content">
+                            <h3>Project</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo nulla exercitationem animi quod praesentium incidunt fugit aspernatur temporibus, ea iusto ratione impedit molestias neque adipisci facilis perferendis delectus reiciendis ducimus.</p>
+                        </div>
+                    </a>
+                    <a href="/nieuws3" className="nieuws-block">
+                        <div className="nieuws-image">
+                            <img src="/img/750dinner.jpg" alt="Event" />
 
-            </div>
-            <div className="nieuws-content">
-                <h3>Event</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, sint veniam! Sint voluptatum quae corporis aliquam labore, dolorum eius sunt, delectus culpa, iste unde asperiores ratione. Numquam itaque pariatur quibusdam!</p>
-            </div>
-        </a>
-    </div>
-</section>
+                        </div>
+                        <div className="nieuws-content">
+                            <h3>Event</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, sint veniam! Sint voluptatum quae corporis aliquam labore, dolorum eius sunt, delectus culpa, iste unde asperiores ratione. Numquam itaque pariatur quibusdam!</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
 
 
 
