@@ -140,7 +140,7 @@ body {
 }
 
 .section {
-    height: 50rem;
+    height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,17 +149,6 @@ body {
     color: var(--white);
 }
 
-/* Define the fade-in animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Events Section */
 .events {
     background: linear-gradient(
         135deg,
@@ -167,43 +156,58 @@ body {
         var(--light-purple)
     );
     color: var(--white);
-    position: relative; /* Ensure the pseudo-element is positioned relative to the container */
+    position: relative;
     padding: 2rem;
     text-align: center;
-}
-
-/* Timeline Line Animation */
-.events::before {
-    content: "";
-    position: absolute;
-    top: 50%; /* Place the line in the middle */
-    left: 0; /* Start from the left */
-    width: 0%; /* Initially no width */
-    height: 2px; /* Line height */
-    background-color: var(--white); /* White line color */
-    animation: timelineAnimation 3s ease-in-out forwards;
-}
-
-/* Timeline Animation */
-@keyframes timelineAnimation {
-    0% {
-        width: 0%; /* Line starts at 0% width */
-    }
-    100% {
-        width: 100%; /* Line reaches 100% width (full container width) */
-    }
-}
-
-/* Responsive behavior */
-@media (max-width: 768px) {
-    .events {
-        padding: 1rem;
-    }
+    display: flex;
+    flex-direction: column; /* Ensures elements inside are stacked vertically */
+    align-items: center; /* Center the content */
 }
 
 .nieuws {
     background: var(--white);
     color: var(--dark-purple);
+}
+
+.nieuws {
+    background: var(--white);
+    color: var(--dark-purple);
+    padding: 3rem 1rem;
+}
+
+.nieuws-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nieuws-block {
+    flex: 1;
+    max-width: 300px;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.nieuws-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    background-color: var(--light-purple);
+    color: var(--white);
+}
+
+.nieuws-block:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .projects {
@@ -257,5 +261,21 @@ body {
 
     .user-name {
         margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .events {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nieuws-container {
+        flex-direction: column;
+    }
+
+    .nieuws-block {
+        margin-bottom: 1.5rem;
     }
 }

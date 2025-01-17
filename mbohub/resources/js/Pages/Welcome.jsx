@@ -18,14 +18,25 @@ function Welcome() {
             {/* Events Section */}
             <section className="section events">
                 <h2>Events</h2>
-                <p>test</p>
+                <p>Balls</p>
             </section>
 
             {/* Nieuws Section */}
-            <section className="section nieuws">
-                <h2>Nieuws</h2>
-                <p>test</p>
-            </section>
+<section className="section nieuws">
+    
+    <div className="nieuws-container">
+        <a href="/nieuws1" className="nieuws-block">
+            Nieuws 1
+        </a>
+        <a href="/nieuws2" className="nieuws-block">
+            Nieuws 2
+        </a>
+        <a href="/nieuws3" className="nieuws-block">
+            Nieuws 3
+        </a>
+    </div>
+</section>
+
 
             {/* Projects Section */}
             <section className="section projects">
