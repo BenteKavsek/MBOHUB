@@ -16,10 +16,10 @@ function Welcome() {
             {/* Events Section */}
             <section className="section events">
                 <h2>Events</h2>
-                <p>Balls</p>
+                <p>Discover upcoming events and activities that bring our community together.</p>
             </section>
 
-           {/* Nieuws Section */}
+            {/* Nieuws Section */}
          <section className="section nieuws">
     <div className="nieuws-container">
         <a href="/nieuws1" className="nieuws-block">
@@ -54,7 +54,7 @@ function Welcome() {
 </section>
 
 
-
+                
 
             {/* Projects Section */}
             <section className="section projects">
