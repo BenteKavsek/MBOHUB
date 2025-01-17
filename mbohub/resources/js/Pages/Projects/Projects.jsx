@@ -17,7 +17,7 @@ function Projects() {
     return (
         <AuthenticatedLayout>
             <section className="projects">
-                <a href={route('projects.create')}>Maak project</a>
+                <a href={route('projects.create')} className="projects__new">Maak project</a>
                 <div className="projects__list">
                     {dataSets}
                 </div>
@@ -27,4 +27,5 @@ function Projects() {
     );
 }
 
+import '../css/Projects.css';
 export default Projects;

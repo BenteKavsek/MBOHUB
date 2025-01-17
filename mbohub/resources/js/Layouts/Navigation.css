@@ -30,8 +30,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: auto;
-    height: 100%;
+    width: 50%;
+    height: auto;
     object-fit: contain;
 }
 
@@ -146,16 +146,6 @@ body {
     color: var(--white);
 }
 
-/* Define the fade-in animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 /* Events Section */
 .events {
     background: linear-gradient(
@@ -169,33 +159,17 @@ body {
     text-align: center;
 }
 
-/* Timeline Line Animation */
-.events::before {
-    content: "";
-    position: absolute;
-    top: 50%; /* Place the line in the middle */
-    left: 0; /* Start from the left */
-    width: 0%; /* Initially no width */
-    height: 2px; /* Line height */
-    background-color: var(--white); /* White line color */
-    animation: timelineAnimation 3s ease-in-out forwards;
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
-/* Timeline Animation */
-@keyframes timelineAnimation {
-    0% {
-        width: 0%; /* Line starts at 0% width */
-    }
-    100% {
-        width: 100%; /* Line reaches 100% width (full container width) */
-    }
-}
-
-/* Responsive behavior */
-@media (max-width: 768px) {
-    .events {
-        padding: 1rem;
-    }
+.events h2,
+.events p {
+    margin: 0;
 }
 
 .nieuws {
@@ -208,7 +182,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 3rem; /* Space between blocks */
+    gap: 3rem;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
@@ -216,10 +190,10 @@ body {
 
 .nieuws-block {
     flex: 1;
-    width: 350px; /* Fixed width */
+    width: 350px;
     background-color: var(--light-gray);
     color: var(--dark-gray);
-    padding: 1.5rem; /* Padding around the content */
+    padding: 1.5rem;
     text-align: center;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -239,10 +213,10 @@ body {
 
 .nieuws-image {
     width: 100%;
-    height: 150px; /* Image height */
+    height: 150px;
     margin-bottom: 1rem;
-    overflow: hidden; /* Ensures the image doesn't overflow */
-    border-radius: 8px; /* Rounded corners for the image */
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .nieuws-image img {
@@ -262,7 +236,7 @@ body {
     color: inherit;
 }
 
-.projects {
+.projectss {
     background: linear-gradient(
         135deg,
         var(--light-purple),
@@ -282,28 +256,34 @@ body {
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem 1rem;
-    }
-
-    .header_links {
+/* Media Query for screens below 1036px */
+@media (max-width: 1036px) {
+    .nieuws-container {
         flex-direction: column;
         gap: 1.5rem;
+        margin-bottom: 2rem;
     }
 
-    .header_name {
-        margin-top: 1rem;
+    .nieuws-block {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .projectss {
+        padding-top: 2rem;
+    }
+
+    .section {
+        padding: 1.5rem;
     }
 }
 
-@media (max-width: 768px) {
+/* Media Query for screens below 950px */
+@media (max-width: 950px) {
     .header {
         flex-direction: column;
         text-align: center;
-        padding: 1rem 1rem;
+        padding: 1rem;
     }
 
     .nav {
@@ -311,7 +291,130 @@ body {
         gap: 1.5rem;
     }
 
-    .user-name {
+    .header_name {
         margin-top: 1rem;
+    }
+
+    .events {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .nieuws-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .nieuws-block {
+        width: 90%;
+    }
+
+    .header-logo {
+        display: none;
+    }
+}
+
+/* Media Query for screens below 750px */
+@media (max-width: 1000px) {
+    .header-logo {
+        width: 40%;
+        height: auto;
+    }
+
+    .header {
+        padding: 1rem;
+    }
+
+    .heading {
+        height: 200px;
+        padding: 15px;
+    }
+
+    .nav-link,
+    .guest-name {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .header_name {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .section {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .events {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .nieuws-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .nieuws-block {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .header_links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nieuws-block {
+        flex: 1;
+        width: 350px;
+        background-color: var(--light-gray);
+        color: var(--dark-gray);
+        padding: 1.5rem;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Media Query for screens below 480px */
+@media (max-width: 480px) {
+    .heading {
+        height: 150px;
+        padding: 10px;
+    }
+
+    .header-logo {
+        width: 30%;
+    }
+
+    .nav-link,
+    .guest-name {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .header_name {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    .events {
+        padding: 1rem;
+    }
+
+    .nieuws-block {
+        width: 100%;
     }
 }
