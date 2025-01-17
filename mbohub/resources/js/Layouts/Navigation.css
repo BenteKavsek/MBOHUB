@@ -16,6 +16,8 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+
+
 .heading {
     display: flex;
     justify-content: center;
@@ -27,6 +29,7 @@ body {
 }
 
 .header-logo {
+    z-index: -10;
     position: absolute;
     top: 0;
     left: 0;
@@ -64,6 +67,8 @@ body {
 }
 
 .header {
+    position: relative;
+    z-index: -5;
     background-color: var(--purple-jam);
     display: flex;
     justify-content: space-between;
