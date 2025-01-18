@@ -52,5 +52,5 @@ function Project() {
     );
 }
 
-import './Project.css';
+import '../css/Project.css';
 export default Project;

@@ -10,13 +10,13 @@ function Projects() {
             <a href={`project/${project.id}`} className="projects__project--link">
                 {project.naam}
             </a>
-            <img src={project.image} alt="" className="projects__project--image" />
+            <img src={`/img/${project.image}`} alt="" className="projects__project--image" />
         </article>
     );
 
     return (
         <AuthenticatedLayout>
-            <section className="projects">
+            <section className="projects-coll">
                 <a href={route('projects.create')} className="projects__new">Maak project</a>
                 <div className="projects__list">
                     {dataSets}
