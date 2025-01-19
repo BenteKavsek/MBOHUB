@@ -43,7 +43,6 @@ function Welcome() {
                     <a href="/nieuws3" className="nieuws-block">
                         <div className="nieuws-image">
                             <img src="/img/750dinner.jpg" alt="Event" />
-
                         </div>
                         <div className="nieuws-content">
                             <h3>Event</h3>
@@ -52,9 +51,6 @@ function Welcome() {
                     </a>
                 </div>
             </section>
-
-
-
 
             {/* Projects Section */}
             <section className="section projectss">
