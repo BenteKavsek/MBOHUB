@@ -11,6 +11,15 @@
     text-align: center;
 }
 
+.heading__banner {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
 .projects-container {
     display: flex;
     justify-content: space-between;
@@ -60,11 +69,231 @@
     height: 100%;
 }
 
+/* Events Section */
+.events {
+    background: linear-gradient(135deg,
+            var(--dark-purple),
+            var(--light-purple));
+    color: var(--white);
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.events h2,
+.events p {
+    margin: 0;
+}
+
+.nieuws {
+    background: var(--white);
+    color: var(--dark-purple);
+    padding: 3rem 1rem;
+}
+
+.nieuws-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nieuws-block {
+    flex: 1;
+    width: 350px;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nieuws-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    background-color: var(--light-purple);
+    color: var(--white);
+}
+
+.nieuws-image {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.section {
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: var(--white);
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Media Query for screens below 1036px */
+@media (max-width: 1036px) {
+    .nieuws-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .nieuws-block {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .projectss {
+        padding-top: 2rem;
+    }
+
+    .section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .events {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .nieuws-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .nieuws-block {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .events {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .nieuws-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .nieuws-block {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .nieuws-block {
+        flex: 1;
+        width: 350px;
+        background-color: var(--light-gray);
+        color: var(--dark-gray);
+        padding: 1.5rem;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Media Query for screens below 480px */
+@media (max-width: 480px) {
+    .section {
+        padding: 1rem;
+    }
+
+    .events {
+        padding: 1rem;
+    }
+
+    .nieuws-block {
+        width: 100%;
+    }
+}
+
+.nieuws-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nieuws-content h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: inherit;
+}
+
+.nieuws-content p {
+    font-size: 1rem;
+    color: inherit;
+}
+
+.projectss {
+    background: linear-gradient(135deg,
+            var(--light-purple),
+            var(--dark-purple));
+    color: var(--white);
+}
+
 .project-description {
     padding: 15px;
     font-size: 1rem;
     color: #ffffff;
     line-height: 1.5;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: -20;
+    position: relative;
 }
 
 .site-footer {

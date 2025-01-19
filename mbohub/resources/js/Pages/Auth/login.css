@@ -1,167 +1,55 @@
-/* Header styling */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width */
-    background-color: #5E3289; /* Purple background */
-    color: white; /* White text color */
-    padding: 1rem; /* Adjust padding as needed */
-    z-index: 1000; /* Ensure it stays above other elements */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
-}
-
-.header-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 1000%;
-    -o-object-fit: contain;
-    object-fit: contain;
-  }
-
-/* Adjust body layout to account for fixed header */
-body {
-    font-family: 'Arial', sans-serif;
-    min-height: 100vh;
-    margin: 0;
-    padding-top: 60px; /* Space for the header height */
+main {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #5E3289; /* Default text color */
+    font-size: 62.5%;
 }
 
-/* Form container: Styled form with yellow background and shadow */
-form {
-    background: #fff; /* Corrected yellow background */
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-    padding: 2.5rem 2rem;
-    max-width: 420px;
-    width: 100%;
+.login__form {
+    box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
+    width: 40rem;
 }
 
-/* Input container: Ensures labels and inputs are aligned */
-.input-container {
+.form__input {
+    font-size: 3rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.5rem;
-    gap: 0.5rem; /* Adds space between label and input */
 }
 
-.input-container label {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #5E3289;
+.form__input label {
+    color: purple;
 }
 
-/* Input fields: Uniform styling for email and password */
-input[type="email"],
-input[type="password"] {
-    width: 100%; /* Full width */
-    border: 2px solid #aaa; /* Yellow border */
-    border-radius: 8px;
-    padding: 0.8rem;
-    font-size: 1rem;
-    background: #fff9e6; /* Light yellow background */
-    color: #5E3289; /* Purple text color */
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
+.form__input input {
+    border-radius: 5px;
+    padding: 1rem;
 }
 
-/* Focus styles: Blue border and glow */
-input[type="email"]:focus,
-input[type="password"]:focus {
-    outline: none;
-    border-color: #43B3C4; /* Blue focus border */
-    box-shadow: 0 0 8px rgba(67, 179, 196, 0.5); /* Soft blue glow */
-    background: #fff4cc; /* Slightly darker yellow on focus */
+.form__onthoud {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
 }
 
-/* Buttons: Vibrant red with hover effect */
-button {
-    background: #E03344;
-    color: #fff;
-    font-weight: bold;
-    padding: 0.6rem 1.5rem;
-    border-radius: 10px;
+.form__forgot {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: black;
+}
+
+.form__btn {
+    background-color: #ff4500;
     border: none;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    width: 100%;
-}
-
-button:hover {
-    background: #5E3289;
-    transform: translateY(-2px);
-}
-
-button:disabled {
-    background: #aaa;
-    cursor: not-allowed;
-}
-
-/* Checkbox label: Styled with yellow highlight */
-label span {
-    margin-left: 8px;
-    color: #5E3289;
-    background: #cf56e7;
-    padding: 0.3rem 0.5rem;
-    border-radius: 6px;
-}
-
-/* Links: Add yellow hover effects */
-a {
-    color: #43B3C4;
-    text-decoration: underline;
-    transition: color 0.3s ease, background 0.3s;
-    padding: 1%;
-
-}
-
-a:hover {
-    color: #E03344;
-    background: #aaa;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    box-shadow: 0 4px 10px rgba(67, 179, 196, 0.4);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    form {
-        padding: 1.5rem;
-        gap: 0.75rem;
-    }
-
-    input[type="email"],
-    input[type="password"] {
-        font-size: 0.875rem;
-        padding: 0.6rem;
-    }
-
-    button {
-        padding: 0.6rem;
-    }
-}
-
-@media (max-width: 480px) {
-    form {
-        padding: 1rem;
-        gap: 0.5rem;
-    }
-
-    input[type="email"],
-    input[type="password"] {
-        font-size: 0.75rem;
-        padding: 0.5rem;
-    }
-
-    button {
-        padding: 0.5rem;
-    }
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 0;
 }

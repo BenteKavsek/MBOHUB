@@ -5,13 +5,6 @@ import { usePage } from "@inertiajs/react";
 function About() {
     return (
         <AuthenticatedLayout>
-<<<<<<< HEAD
-            <h1>Meet the Team!</h1>
-            <p>Welkom op MBO-HUB, het platform voor en door MBO leerlingen uit Amsterdam!</p>
-            <br /><br />
-            <p><i>TEXT OVER MBO HUB</i></p>
-            <img src="./img/theTeam.jpg" alt="Foto van mbo hub oprichters" />
-=======
             <div className="about--text">
                 <h1>About Us</h1>
                 <p>Welkom op MBO-HUB, het platform voor en door MBO leerlingen uit Amsterdam!</p>
@@ -19,7 +12,7 @@ function About() {
                     MBO-HUB is opgericht met de missie om MBO-studenten een centrale plek te bieden waar ze kunnen leren, delen en groeien.
                     Ons platform is een gemeenschap gedreven door samenwerking, innovatie en inclusiviteit. Of je nu op zoek bent
                     naar ondersteuning, inspiratie, of gewoon een plek om je ideeën te delen, MBO-HUB is er voor jou.
-                </p>                
+                </p>
             </div>
 
             <div className="about--text">
@@ -49,9 +42,9 @@ function About() {
             </div>
 
 
-            
+
             <div className="team-section">
-            <h2>Meet the Team</h2>
+                <h2>Meet the Team</h2>
 
                 <div className="team--container">
                     <div className="team-member">
@@ -82,7 +75,6 @@ function About() {
 
             </div>
             <br />
->>>>>>> 6de22df96b492d98e0658c54ecd06721be7572c4
         </AuthenticatedLayout>
     );
 }

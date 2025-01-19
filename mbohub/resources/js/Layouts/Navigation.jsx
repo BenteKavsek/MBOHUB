@@ -22,8 +22,12 @@ function Navigation() {
 
                 <div className="user-info">
                     {auth.user ? (
-                        <span className="user-name">{auth.user.name}</span>
+                        <div className="login-user">
+                            <div>Welkom</div>
+                            <span className="user-name">{auth.user.name}!</span>
+                        </div>
                     ) : (
+
                         <span className="guest-name">Guest</span>
                     )}
                 </div>

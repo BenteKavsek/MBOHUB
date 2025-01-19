@@ -31,8 +31,8 @@ export default function Login({ status, canResetPassword }) {
                 </div>
             )}
 
-            <form onSubmit={submit}>
-                <div className='container--email'>
+            <form className='login__form' onSubmit={submit}>
+                <div className='container--email form__input'>
                     <InputLabel htmlFor="email" value="Email" className='title--email' />
 
                     <TextInput
@@ -49,7 +49,7 @@ export default function Login({ status, canResetPassword }) {
                     <InputError message={errors.email} className="mt-2" />
                 </div>
 
-                <div className="container--password">
+                <div className="container--password form__input">
                     <InputLabel htmlFor="password" value="Password" className='title--password' />
 
                     <TextInput
@@ -65,8 +65,8 @@ export default function Login({ status, canResetPassword }) {
                     <InputError message={errors.password} className="mt-2" />
                 </div>
 
-                <div className="container--remember block">
-                    <label className="flex items-center">
+                <div className="form__input">
+                    <label className="form__onthoud">
                         <Checkbox
                             name="remember"
                             checked={data.remember}
@@ -80,7 +80,7 @@ export default function Login({ status, canResetPassword }) {
                     </label>
                 </div>
 
-                <div className="container--forgot">
+                <div className="form__forgot form__input">
                     {canResetPassword && (
                         <Link
                             href={route('password.request')}
@@ -90,7 +90,7 @@ export default function Login({ status, canResetPassword }) {
                         </Link>
                     )}
 
-                    <PrimaryButton className="ms-4" disabled={processing}>
+                    <PrimaryButton className="form__btn" disabled={processing}>
                         Log in
                     </PrimaryButton>
                 </div>
@@ -98,4 +98,4 @@ export default function Login({ status, canResetPassword }) {
         </GuestLayout>
     );
 }
-import './Login.css';
+import './login.css';
