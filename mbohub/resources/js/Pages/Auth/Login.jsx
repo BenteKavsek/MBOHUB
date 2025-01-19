@@ -32,8 +32,8 @@ export default function Login({ status, canResetPassword }) {
             )}
 
             <form onSubmit={submit}>
-                <div className="container--email">
-                    <InputLabel htmlFor="email" value="Email" className="title--email" />
+                <div className='container--email'>
+                    <InputLabel htmlFor="email" value="Email" className='title--email' />
 
                     <TextInput
                         id="email"
@@ -50,7 +50,7 @@ export default function Login({ status, canResetPassword }) {
                 </div>
 
                 <div className="container--password">
-                    <InputLabel htmlFor="password" value="Password" className="title--password" />
+                    <InputLabel htmlFor="password" value="Password" className='title--password' />
 
                     <TextInput
                         id="password"
@@ -65,8 +65,8 @@ export default function Login({ status, canResetPassword }) {
                     <InputError message={errors.password} className="mt-2" />
                 </div>
 
-                <div className="container--remember block">
-                    <label className="flex items-center">
+                <div className="form__input">
+                    <label className="form__onthoud">
                         <Checkbox
                             name="remember"
                             checked={data.remember}
@@ -76,7 +76,7 @@ export default function Login({ status, canResetPassword }) {
                     </label>
                 </div>
 
-                <div className="container--forgot">
+                <div className="form__forgot form__input">
                     {canResetPassword && (
                         <Link
                             href={route('password.request')}
@@ -86,19 +86,12 @@ export default function Login({ status, canResetPassword }) {
                         </Link>
                     )}
 
-                    <div className="button-group">
-                        <button type="submit" className="same-button" disabled={processing}>
-                            Log in
-                        </button>
-                        <Link
-                            href="/"
-                            className="same-button"
-                        >
-                            Return to Homepage
-                        </Link>
-                    </div>
+                    <PrimaryButton className="ms-4" disabled={processing}>
+                        Log in
+                    </PrimaryButton>
                 </div>
             </form>
         </div>
     );
 }
+import './Login.css';

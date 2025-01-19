@@ -9,6 +9,15 @@ body {
     color: #5e3289;
 }
 
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 62.5%;
+}
+
 form {
     background: #fff;
     border-radius: 15px;
@@ -18,7 +27,7 @@ form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .input-container {
@@ -99,14 +108,6 @@ button:active,
     font-size: 1rem;
 }
 
-button,
-.return-to-homepage-button {
-    text-align: center;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
 label span {
     margin-left: 8px;
     color: #5e3289;
@@ -128,6 +129,43 @@ a:hover {
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     box-shadow: 0 4px 10px rgba(67, 179, 196, 0.4);
+}
+
+.form__input {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input label {
+    color: purple;
+}
+
+.form__input input {
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.form__onthoud {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.form__forgot {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: black;
+}
+
+.form__btn {
+    background-color: #ff4500;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 0;
 }
 
 @media (max-width: 768px) {
