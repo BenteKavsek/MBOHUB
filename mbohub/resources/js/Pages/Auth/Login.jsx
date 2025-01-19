@@ -3,7 +3,7 @@ import InputError from '@/Components/InputError';
 import InputLabel from '@/Components/InputLabel';
 import PrimaryButton from '@/Components/PrimaryButton';
 import TextInput from '@/Components/TextInput';
-import GuestLayout from '@/Layouts/GuestLayout';
+import './Login.css';
 import { Head, Link, useForm } from '@inertiajs/react';
 
 export default function Login({ status, canResetPassword }) {
@@ -22,7 +22,7 @@ export default function Login({ status, canResetPassword }) {
     };
 
     return (
-        <GuestLayout>
+        <div>
             <Head title="Log in" />
 
             {status && (
@@ -32,8 +32,8 @@ export default function Login({ status, canResetPassword }) {
             )}
 
             <form onSubmit={submit}>
-                <div className='container--email'>
-                    <InputLabel htmlFor="email" value="Email" className='title--email' />
+                <div className="container--email">
+                    <InputLabel htmlFor="email" value="Email" className="title--email" />
 
                     <TextInput
                         id="email"
@@ -50,7 +50,7 @@ export default function Login({ status, canResetPassword }) {
                 </div>
 
                 <div className="container--password">
-                    <InputLabel htmlFor="password" value="Password" className='title--password' />
+                    <InputLabel htmlFor="password" value="Password" className="title--password" />
 
                     <TextInput
                         id="password"
@@ -70,13 +70,9 @@ export default function Login({ status, canResetPassword }) {
                         <Checkbox
                             name="remember"
                             checked={data.remember}
-                            onChange={(e) =>
-                                setData('remember', e.target.checked)
-                            }
+                            onChange={(e) => setData('remember', e.target.checked)}
                         />
-                        <span className="remember--text">
-                            Remember me
-                        </span>
+                        <span className="remember--text">Remember me</span>
                     </label>
                 </div>
 
@@ -90,12 +86,19 @@ export default function Login({ status, canResetPassword }) {
                         </Link>
                     )}
 
-                    <PrimaryButton className="ms-4" disabled={processing}>
-                        Log in
-                    </PrimaryButton>
+                    <div className="button-group">
+                        <button type="submit" className="same-button" disabled={processing}>
+                            Log in
+                        </button>
+                        <Link
+                            href="/"
+                            className="same-button"
+                        >
+                            Return to Homepage
+                        </Link>
+                    </div>
                 </div>
             </form>
-        </GuestLayout>
+        </div>
     );
 }
-import './Login.css';

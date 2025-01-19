@@ -4,6 +4,7 @@ import PrimaryButton from '@/Components/PrimaryButton';
 import TextInput from '@/Components/TextInput';
 import GuestLayout from '@/Layouts/GuestLayout';
 import { Head, useForm } from '@inertiajs/react';
+import '@/path/to/login.css'; // Importing the login.css
 
 export default function ConfirmPassword() {
     const { data, setData, post, processing, errors, reset } = useForm({
@@ -19,7 +20,7 @@ export default function ConfirmPassword() {
     };
 
     return (
-        <GuestLayout>
+        <GuestLayout showHeader={false}>  {/* Hide header on this page */}
             <Head title="Confirm Password" />
 
             <div className="mb-4 text-sm text-gray-600 dark:text-gray-400">
