@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Welcome() {
     return (
-        <GuestLayout>
+        <GuestLayout hideNavigation={false}>
             {/* Heading Section */}
             <section className="heading">
                 <img
