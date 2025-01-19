@@ -32,7 +32,7 @@ function Project() {
 
                     <section className="project__right">
 
-                        <img src="/img/750dinner.jpg" alt="" className="project__image" />
+                        <img src={`/img/${project.image}`} alt="" className="project__image" />
 
                         <section className="project__date">
                             <p>{project.datum}</p>

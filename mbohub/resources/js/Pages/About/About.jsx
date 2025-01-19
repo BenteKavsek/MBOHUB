@@ -8,10 +8,11 @@ function About() {
             <p>Welkom op MBO-HUB, het platform voor en door MBO leerlingen uit Amsterdam!</p>
             <br /><br />
             <p><i>TEXT OVER MBO HUB</i></p>
-            <img src="" alt="Foto van mbo hub oprichters" />
+            <img src="./img/theTeam.jpg" alt="Foto van mbo hub oprichters" />
         </AuthenticatedLayout>
     )
 }
 
+import './About.css';
 export default About;
 
