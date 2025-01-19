@@ -20,14 +20,12 @@
 
 .header {
     position: relative;
-    z-index: -5;
     background-color: var(--purple-jam);
     padding: 1rem 2rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-logo {
-    z-index: -10;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,11 +60,11 @@
     padding: 0 2rem;
 }
 
-/* .nav-link:hover {
+.nav-link:hover {
     background-color: var(--dark-purple);
     color: var(--white);
     transform: translateY(-2px);
-} */
+}
 
 .header:after {
     content: "";
@@ -77,7 +75,6 @@
     margin-top: -3px;
     display: none;
 }
-
 
 @media (max-width: 950px) {
     .header {
@@ -90,8 +87,6 @@
         flex-direction: column;
         gap: 1.5rem;
     }
-
-
 }
 
 @media (max-width: 1000px) {
@@ -121,5 +116,4 @@
         font-size: 0.9rem;
         padding: 0.5rem 0.8rem;
     }
-
 }

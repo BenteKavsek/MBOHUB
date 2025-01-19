@@ -7,8 +7,8 @@
     --dark-grey: #333;
     --light-grey: #f8f8f8;
     --white: #ffffff;
-    --body-font: 'Roboto', sans-serif; /* Modern clean font */
-    --heading-font: 'Montserrat', sans-serif; /* Stylish heading font */
+    --body-font: "Roboto", sans-serif; /* Modern clean font */
+    --heading-font: "Montserrat", sans-serif; /* Stylish heading font */
 }
 
 /* Reset and Basic Styles */
@@ -71,7 +71,8 @@ section:nth-child(odd) {
     color: var(--white);
 }
 
-section:nth-child(odd) h2, section:nth-child(odd) p {
+section:nth-child(odd) h2,
+section:nth-child(odd) p {
     color: var(--white);
 }
 
@@ -96,7 +97,7 @@ ul li {
     margin-bottom: 15px;
 }
 
-.about--text{
+.about--text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,38 +109,37 @@ ul li {
     border-bottom: #6a0572 solid 0.1rem;
 }
 
-.about--text h1{
+.about--text h1 {
     color: #6a0572;
     padding: 2rem;
-    margin:1rem;
+    margin: 1rem;
 }
 
-.header--color1{
- color: #6dcff6;
-}
-
-.header--color2{
-    color: #ff4500;
-}
-
-
-.header--color3{
-    color: #ffba08;
-}
-
-.point--1{
-    color: #6a0572;
-}
-
-.point--2{
+.header--color1 {
     color: #6dcff6;
 }
 
-.point--3{
+.header--color2 {
     color: #ff4500;
 }
 
-.point--4{
+.header--color3 {
+    color: #ffba08;
+}
+
+.point--1 {
+    color: #6a0572;
+}
+
+.point--2 {
+    color: #6dcff6;
+}
+
+.point--3 {
+    color: #ff4500;
+}
+
+.point--4 {
     color: #ffba08;
 }
 
@@ -149,17 +149,17 @@ ul li {
     flex-direction: column;
     padding: 10rem;
     gap: 2rem;
-    justify-items: center; /* Center each team member */
-    margin-top: 40px; /* Added margin for space */
+    justify-items: center;
+    margin-top: 40px;
     width: 100%;
 }
 
-.team-section h2{
+.team-section h2 {
     display: flex;
     justify-content: center;
 }
 
-.team--container{
+.team--container {
     display: flex;
     gap: 2rem;
 }
@@ -201,7 +201,6 @@ ul li {
     line-height: 1.6;
 }
 
-
 /* Button Styling */
 button {
     display: inline-block;
@@ -233,10 +232,10 @@ button:hover {
     }
 
     .team-section {
-        grid-template-columns: 1fr; /* Stack team members on smaller screens */
+        grid-template-columns: 1fr;
     }
 
     .team-member {
-        width: 90%; /* Allow more space for team members */
+        width: 90%;
     }
 }
