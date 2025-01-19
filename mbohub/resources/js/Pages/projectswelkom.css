@@ -305,7 +305,7 @@
 
 .site-footer h6 {
     color: #fff;
-    font-size: 14px;
+    font-size: 1.5rem;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
@@ -313,12 +313,14 @@
 .site-footer p {
     margin: 0 0 5px;
     line-height: 1.4;
+    font-size: 1rem;
 }
 
 .site-footer a {
     color: #737373;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 1rem;
 }
 
 .site-footer a:hover {
@@ -329,10 +331,12 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 1rem;
 }
 
 .footer-links li {
     margin-bottom: 3px;
+    font-size: 1rem;
 }
 
 .row {
@@ -359,6 +363,7 @@
 
 .text-right {
     text-align: right;
+    font-size: 1rem;
 }
 
 .social-icons {
@@ -367,6 +372,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 1rem;
 }
 
 .social-icons li {
@@ -384,11 +390,13 @@
     text-align: center;
     font-size: 12px;
     transition: background 0.3s ease, color 0.3s ease;
+    font-size: 1rem;
 }
 
 .social-icons a:hover {
     background: #3366cc;
     color: #fff;
+    font-size: 1rem;
 }
 
 @media (max-width: 1000px) {

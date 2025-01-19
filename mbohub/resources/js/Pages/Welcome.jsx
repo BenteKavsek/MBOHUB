@@ -1,5 +1,7 @@
 import GuestLayout from "@/Layouts/GuestLayout";
 import "./projectswelkom.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function Welcome() {
     return (
@@ -140,10 +142,9 @@ function Welcome() {
                         </div>
                         <div className="col-md-6 text-right">
                             <ul className="social-icons">
-                                <li><a className="facebook" href="#"><i className="fa fa-facebook"></i></a></li>
-                                <li><a className="twitter" href="#"><i className="fa fa-twitter"></i></a></li>
-                                <li><a className="linkedin" href="#"><i className="fa fa-linkedin"></i></a></li>
-                                <li><a className="instagram" href="#"><i className="fa fa-instagram"></i></a></li>
+                                <li><a className="youtube" href="https://www.youtube.com/@MBO-Hub"><i className="fa fa-youtube"></i></a></li>
+                                <li><a className="linkedin" href="https://www.linkedin.com/company/mbo-hub-amsterdam"><i className="fa fa-linkedin"></i></a></li>
+                                <li><a className="instagram" href="https://www.instagram.com/mbohub.amsterdam"><i className="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -152,5 +153,7 @@ function Welcome() {
         </GuestLayout>
     );
 }
+
+
 
 export default Welcome;
