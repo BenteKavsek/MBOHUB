@@ -1,6 +1,5 @@
 import GuestLayout from "@/Layouts/GuestLayout";
 import "./projectswelkom.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 function Welcome() {
@@ -17,16 +16,21 @@ function Welcome() {
 
             {/* Events Section */}
             <section className="section events">
-                <h2>TEKST</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tenetur quos nulla est veritatis odit repudiandae nobis sunt velit possimus quis temporibus eum libero consectetur repellendus, amet illum reprehenderit laudantium?</p>
+                <h2>Welkom bij MBO-Hub!</h2>
+                <p>MBO-Hub Amsterdam is van start! MBO-Hub Amsterdam is een samenwerking tussen ROC van Amsterdam, Mediacollege Amsterdam en HMC, opgericht in het kader van Amsterdam 750. Wij zijn dé plek waar mbo-studenten, bedrijven, de Gemeente Amsterdam en initiatieven samenkomen om te werken aan de toekomst van onze stad. De MBO-Hub biedt studenten een kans om hun talenten in de praktijk te brengen, door ze te betrekken bij projecten, evenementen en initiatieven rondom het 750-jarig jubileum van Amsterdam.
+
+Wat doen we? We verbinden bedrijven en organisaties met mbo-studenten, die meewerken aan diverse opdrachten zoals evenementenorganisatie, videoproducties, groenprojecten en nog veel meer. Hierdoor doen de studenten waardevolle praktijkervaring op, door middel van stages, projecten en leerwerkopdrachten, en dragen ze bij aan de ontwikkeling van Amsterdam. Belang van de MBO-Hub Mbo-studenten vormen het kloppende hart van de stad. Door hen te betrekken bij belangrijke projecten zorgen we voor nieuwe ideeën, jonge energie en een sterkere verbinding tussen onderwijs en de maatschappij.</p>
+            <div className="oberpop">
+            <img src="/img/poppetjeober-removebg-preview.png" alt="MBO Hub character" />
+            </div>
             </section>
 
             {/* Nieuws Section */}
             <section className="section nieuws">
                 <div className="nieuws-container">
                     <a href="/nieuws1" className="nieuws-block">
-                        <div className="nieuws-image">
-                            <img src="/img/750dinner.jpg" alt="Nieuws 1" />
+                        <div>
+                            <img className="nieuws-image" src="/img/750dinner.jpg" alt="Nieuws 1" />
                         </div>
                         <div className="nieuws-content">
                             <h3>Nieuws</h3>
@@ -55,7 +59,7 @@ function Welcome() {
             </section>
 
             {/* Projects Section */}
-            <section className="section projectss">
+            <section className="section">
                 <div className="projects-container">
                     <div className="project-card">
                         <div className="video-container">
