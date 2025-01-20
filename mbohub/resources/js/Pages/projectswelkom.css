@@ -137,6 +137,96 @@
     height: 100%;
 }
 
+.events {
+    background: linear-gradient(135deg,
+            var(--dark-purple),
+            var(--light-purple));
+    color: var(--white);
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.events h2,
+.events p {
+    margin: 0;
+    width: 80rem;
+    text-align: left;
+}
+
+.oberpop {
+    position: absolute;
+    right: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15rem;
+    height: auto;
+}
+
+.oberpop img {
+    width: 100%;
+}
+
+.nieuws {
+    background: var(--white);
+    color: var(--dark-purple);
+    padding: 3rem 1rem;
+}
+
+.nieuws-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nieuws-block {
+    flex: 1;
+    width: 35rem;
+    min-height: 35rem;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.nieuws-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    background-color: var(--light-purple);
+    color: var(--white);
+}
+
+.nieuws-image {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.nieuws-block .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .section {
     height: 40rem;
@@ -154,12 +244,11 @@
 }
 
 .section p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     margin: 0;
 }
 
-/* Media Query for screens below 1036px */
 @media (max-width: 1036px) {
     .nieuws-container {
         flex-direction: column;
@@ -236,7 +325,6 @@
     }
 }
 
-/* Media Query for screens below 480px */
 @media (max-width: 480px) {
     .section {
         padding: 1rem;
@@ -264,7 +352,7 @@
 }
 
 .nieuws-content p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: inherit;
 }
 
