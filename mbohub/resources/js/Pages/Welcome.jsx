@@ -30,7 +30,7 @@ Wat doen we? We verbinden bedrijven en organisaties met mbo-studenten, die meewe
                 <div className="nieuws-container">
                     <a href="/nieuws1" className="nieuws-block">
                         <div className="nieuws-image">
-                            <img src="/img/nieuws.jpg" alt="Nieuws 1" />
+                            <img src="/img/750dinner.jpg" alt="Nieuws 1" />
                         </div>
                         <div className="nieuws-content">
                             <h3>Nieuws</h3>
@@ -60,12 +60,12 @@ Wat doen we? We verbinden bedrijven en organisaties met mbo-studenten, die meewe
             </section>
 
             {/* Projects Section */}
-            <section className="section projectss">
+            <section className="section">
                 <div className="projects-container">
                     <div className="project-card">
                         <div className="video-container">
                             <iframe
-                                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                src="https://www.youtube.com/watch?v=kwZH1llzlCM"
                                 title="Project Video 1"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -77,7 +77,7 @@ Wat doen we? We verbinden bedrijven en organisaties met mbo-studenten, die meewe
                     <div className="project-card">
                         <div className="video-container">
                             <iframe
-                                src="https://www.youtube.com/embed/3JZ_D3ELwOQ"
+                                src="https://www.youtube.com/watch?v=kwZH1llzlCM"
                                 title="Project Video 2"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -89,7 +89,7 @@ Wat doen we? We verbinden bedrijven en organisaties met mbo-studenten, die meewe
                     <div className="project-card">
                         <div className="video-container">
                             <iframe
-                                src="https://www.youtube.com/embed/V-_O7nl0Ii0"
+                                src="https://www.youtube.com/watch?v=kwZH1llzlCM"
                                 title="Project Video 3"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -101,7 +101,7 @@ Wat doen we? We verbinden bedrijven en organisaties met mbo-studenten, die meewe
                     <div className="project-card">
                         <div className="video-container">
                             <iframe
-                                src="https://www.youtube.com/embed/2Vv-BfVoq4g"
+                                src="https://www.youtube.com/watch?v=kwZH1llzlCM"
                                 title="Project Video 4"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
