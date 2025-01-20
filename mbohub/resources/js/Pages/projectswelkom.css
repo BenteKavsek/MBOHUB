@@ -529,3 +529,33 @@
         flex: 0 0 calc(25% - 20px);
     }
 }
+
+@media (max-width: 1200px) {
+    .oberpop {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .section p {
+        font-size: 0.8rem;
+        line-height: 1.6;
+        margin: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+}
