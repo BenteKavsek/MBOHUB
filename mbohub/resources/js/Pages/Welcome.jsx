@@ -1,6 +1,7 @@
 import GuestLayout from "@/Layouts/GuestLayout";
 import "./projectswelkom.css";
 
+
 function Welcome() {
     return (
         <GuestLayout hideNavigation={false}>
@@ -145,10 +146,21 @@ Wat doen we? We verbinden bedrijven en organisaties met mbo-studenten, die meewe
                         </div>
                         <div className="col-md-6 text-right">
                             <ul className="social-icons">
-                                <li><a className="facebook" href="#"><i className="fa fa-facebook"></i></a></li>
-                                <li><a className="twitter" href="#"><i className="fa fa-twitter"></i></a></li>
-                                <li><a className="linkedin" href="#"><i className="fa fa-linkedin"></i></a></li>
-                                <li><a className="instagram" href="#"><i className="fa fa-instagram"></i></a></li>
+                                <li>
+                                    <a className="youtube" href="https://www.youtube.com/@MBO-Hub">
+                                        <i className="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="linkedin" href="https://www.linkedin.com/company/mbo-hub-amsterdam">
+                                        <i className="fab fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="instagram" href="https://www.instagram.com/mbohub.amsterdam">
+                                        <i className="fab fa-instagram"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -157,5 +169,7 @@ Wat doen we? We verbinden bedrijven en organisaties met mbo-studenten, die meewe
         </GuestLayout>
     );
 }
+
+
 
 export default Welcome;
