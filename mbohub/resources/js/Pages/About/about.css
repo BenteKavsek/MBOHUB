@@ -132,7 +132,6 @@ ul li {
     color: #ffba08;
 }
 
-<<<<<<< HEAD
 .team-section {
     display: flex;
     flex-direction: column;
@@ -183,12 +182,6 @@ ul li {
     line-height: 1.6;
 }
 
-=======
-.point--1 {
-    color: #6a0572;
-    font-size: 1.6rem;
-}
->>>>>>> d5c651885920861927a7a63f42810bbdc11be321
 
 .point--2 {
     color: #6dcff6;
