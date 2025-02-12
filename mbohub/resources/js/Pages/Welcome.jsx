@@ -29,21 +29,21 @@ Wat doen we? We verbinden bedrijven en organisaties met mbo-studenten, die meewe
             <section className="section nieuws">
                 <div className="nieuws-container">
                     <a href="/nieuws1" className="nieuws-block">
-                        <div>
-                            <img className="nieuws-image" src="/img/750dinner.jpg" alt="Nieuws 1" />
+                        <div className="nieuws-image">
+                            <img src="/img/750dinner.jpg" alt="Nieuws 1" />
                         </div>
                         <div className="nieuws-content">
                             <h3>Nieuws</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quam, adipisci nobis quisquam nemo, praesentium quo harum omnis illum ratione sapiente nihil? Perspiciatis enim ratione magni quasi harum autem non.</p>
+                            <p><div className=""></div>Bekijk alle nieuws over het MBO-Hub</p>
                         </div>
                     </a>
                     <a href="/nieuws2" className="nieuws-block">
                         <div className="nieuws-image">
-                            <img src="/img/750dinner.jpg" alt="Project" />
+                            <img src="/img/projects.jpg" alt="Project" />
                         </div>
                         <div className="nieuws-content">
                             <h3>Project</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo nulla exercitationem animi quod praesentium incidunt fugit aspernatur temporibus, ea iusto ratione impedit molestias neque adipisci facilis perferendis delectus reiciendis ducimus.</p>
+                            <p>Bekijk alle Projecten over het MBO-hub</p>
                         </div>
                     </a>
                     <a href="/nieuws3" className="nieuws-block">
@@ -52,9 +52,10 @@ Wat doen we? We verbinden bedrijven en organisaties met mbo-studenten, die meewe
                         </div>
                         <div className="nieuws-content">
                             <h3>Event</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, sint veniam! Sint voluptatum quae corporis aliquam labore, dolorum eius sunt, delectus culpa, iste unde asperiores ratione. Numquam itaque pariatur quibusdam!</p>
+                            <p>Bekijk alle evenementen die het MBO-hub host</p>
                         </div>
                     </a>
+                
                 </div>
             </section>
 

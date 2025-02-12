@@ -137,15 +137,15 @@ ul li {
     flex-direction: column;
     padding: 10rem;
     gap: 2rem;
-    justify-items: center; 
-    margin-top: 40px; 
+    justify-items: center;
+    margin-top: 40px;
     width: 100%;
 }
-.team-section h2{
+.team-section h2 {
     display: flex;
     justify-content: center;
 }
-.team--container{
+.team--container {
     display: flex;
     gap: 2rem;
 }
